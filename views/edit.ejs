@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <form method="post" action="/update/<%= userdata._id %>">
+            product name:<input type="text" value="<%= userdata.product_name %>" name="txt1">
+           product price:<input type="number" value="<%= userdata.product_price %>" name="txt2">
+           <input type="submit" name="submit">
+
+
+        </form>
+    </body>
+</html>

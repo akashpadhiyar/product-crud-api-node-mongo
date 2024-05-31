@@ -1,0 +1,31 @@
+<html>
+   
+    <body>
+        <h2>Product</h2>
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Action</th>
+    
+</tr>
+<% for(var i=0;i<userdata.length;i++){%>
+<tr>
+    <td> <%= i+1 %> </td>
+    <td><%= userdata[i].product_name %></td>
+    <td><%= userdata[i].product_price %></td>
+    <td><a href="/edit/<%=userdata[i]._id %>">Edit</a>|<a href="/delete/<%=userdata[i]._id %>">Delete</a></td>
+</tr>
+
+<% } %>
+</table>
+
+
+
+<a href="/add">Add</a> |
+<a href="/display-api">API</a> |
+<a href="/logout">Logout</a>
+</body>
+</html>
+
